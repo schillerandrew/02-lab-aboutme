@@ -95,31 +95,37 @@ function questionFive() {
 
 questionFive();
 
-// question 6 -- number guessing game >>> "1 * prompt" is to convert str to num
-let numberGuess = 1 * prompt('Time for a different kind of guessing game! You\'ll have four tries to guess a number between 1 and 100! Whenever you guess wrong, I\'ll tell you if you\'re too high or too low!');
-// console.log(numberGuess);
-let numberFromOneToHundred = 57;
-let i;
 
-for (i = 0; i < 3; i++) {
-    if (numberGuess < numberFromOneToHundred) {
-      numberGuess = 1 * prompt('Sorry, your guess is too low, please try again.')
-      // console.log('Sorry, your guess is too low, please try again.')
-    } else if (numberGuess > numberFromOneToHundred) {
-      numberGuess = 1 * prompt('Sorry, your guess is too high, please try again.')
-      // console.log('Sorry, your guess is too high, please try again.')
-    } else if (numberGuess === numberFromOneToHundred) {
-      alert(`Wow, you guessed it! The number is ${numberFromOneToHundred}!`);
-      // console.log(`Wow, you guessed it! The number is ${numberFromOneToHundred}!`);
-      userScore++;
-      break;
-    }
-}
-if (numberGuess !== numberFromOneToHundred) {
-  alert(`Nice try! The number was ${numberFromOneToHundred}!`);
-  // console.log(`Nice try! The number was ${numberFromOneToHundred}!`);
+function questionSix() {
+  // question 6 -- number guessing game >>> "1 * prompt" is to convert str to num
+  let numberGuess = 1 * prompt('Time for a different kind of guessing game! You\'ll have four tries to guess a number between 1 and 100! Whenever you guess wrong, I\'ll tell you if you\'re too high or too low!');
+  // console.log(numberGuess);
+  let numberFromOneToHundred = 57;
+  let i;
+
+  for (i = 0; i < 3; i++) {
+      if (numberGuess < numberFromOneToHundred) {
+        numberGuess = 1 * prompt('Sorry, your guess is too low, please try again.')
+        // console.log('Sorry, your guess is too low, please try again.')
+      } else if (numberGuess > numberFromOneToHundred) {
+        numberGuess = 1 * prompt('Sorry, your guess is too high, please try again.')
+        // console.log('Sorry, your guess is too high, please try again.')
+      } else if (numberGuess === numberFromOneToHundred) {
+        alert(`Wow, you guessed it! The number is ${numberFromOneToHundred}!`);
+        // console.log(`Wow, you guessed it! The number is ${numberFromOneToHundred}!`);
+        userScore++;
+        break;
+      }
+  }
+  if (numberGuess !== numberFromOneToHundred) {
+    alert(`Nice try! The number was ${numberFromOneToHundred}!`);
+    // console.log(`Nice try! The number was ${numberFromOneToHundred}!`);
+  }
 }
 
+questionSix();
+
+function questionOne() {
 // question 7 -- multiple choice question
 let answerMultipleChoice = prompt('And now for something completely different! What is one of my favorite colors? You are guessing from 4 different colors and you get 6 guesses!')
 console.log(answerMultipleChoice)
