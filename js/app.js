@@ -61,31 +61,39 @@ function questionThree() {
 
 questionThree();
 
-// question 4
-let answerFour = prompt('Do I live with any cats?').toLowerCase();
-// console.log(answerFour);
+function questionFour() {
+  // question 4
+  let answerFour = prompt('Do I live with any cats?').toLowerCase();
+  // console.log(answerFour);
 
-if (answerFour === 'y' || answerFour === 'yes') {
-  alert('Yes, I live with many cats!');
-  //console.log('Yes, I live with many cats!');
-  userScore++;
-} else if (answerFour === 'n' || answerFour === 'no') {
-  alert('Actually I live with many cats. And I think I\'m only allergic to one, thank goodness.');
-  //console.log('Actually I live with many cats. And I think I\'m only allergic to one, thank goodness.');
+  if (answerFour === 'y' || answerFour === 'yes') {
+    alert('Yes, I live with many cats!');
+    //console.log('Yes, I live with many cats!');
+    userScore++;
+  } else if (answerFour === 'n' || answerFour === 'no') {
+    alert('Actually I live with many cats. And I think I\'m only allergic to one, thank goodness.');
+    //console.log('Actually I live with many cats. And I think I\'m only allergic to one, thank goodness.');
+  }
 }
 
-// question 5
-let answerFive = prompt('And finally: Have I ever visited Europe?').toLowerCase();
-// console.log(answerFive);
+questionFour();
 
-if (answerFive === 'y' || answerFive === 'yes') {
-  alert(`Nope, I've never been to Europe, but I'd like to go! Well, that's it: thanks for taking my quiz ${usersName}!`);
-  //console.log(`Nope, I've never been to Europe, but I'd like to go! Well, that's it: thanks for taking my quiz ${usersName}!`);
-} else if (answerFive === 'n' || answerFive === 'no') {
-  alert(`Sadly yes, I haven't been to Europe -- yet!! Well, that's it: thanks for taking my quiz ${usersName}!`);
-  //console.log(`Sadly yes, I haven't been to Europe -- yet!! Well, that's it: thanks for taking my quiz ${usersName}!`);
-  userScore++;
+function questionFive() {
+  // question 5
+  let answerFive = prompt('And finally: Have I ever visited Europe?').toLowerCase();
+  // console.log(answerFive);
+
+  if (answerFive === 'y' || answerFive === 'yes') {
+    alert(`Nope, I've never been to Europe, but I'd like to go! Well, that's it: thanks for taking my quiz ${usersName}!`);
+    //console.log(`Nope, I've never been to Europe, but I'd like to go! Well, that's it: thanks for taking my quiz ${usersName}!`);
+  } else if (answerFive === 'n' || answerFive === 'no') {
+    alert(`Sadly yes, I haven't been to Europe -- yet!! Well, that's it: thanks for taking my quiz ${usersName}!`);
+    //console.log(`Sadly yes, I haven't been to Europe -- yet!! Well, that's it: thanks for taking my quiz ${usersName}!`);
+    userScore++;
+  }
 }
+
+questionFive();
 
 // question 6 -- number guessing game >>> "1 * prompt" is to convert str to num
 let numberGuess = 1 * prompt('Time for a different kind of guessing game! You\'ll have four tries to guess a number between 1 and 100! Whenever you guess wrong, I\'ll tell you if you\'re too high or too low!');
