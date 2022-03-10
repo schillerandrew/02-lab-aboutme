@@ -105,10 +105,10 @@ function questionSix() {
 
   for (i = 0; i < 3; i++) {
       if (numberGuess < numberFromOneToHundred) {
-        numberGuess = 1 * prompt('Sorry, your guess is too low, please try again.')
+        numberGuess = 1 * prompt('Sorry, your guess is too low, please try again.');
         // console.log('Sorry, your guess is too low, please try again.')
       } else if (numberGuess > numberFromOneToHundred) {
-        numberGuess = 1 * prompt('Sorry, your guess is too high, please try again.')
+        numberGuess = 1 * prompt('Sorry, your guess is too high, please try again.');
         // console.log('Sorry, your guess is too high, please try again.')
       } else if (numberGuess === numberFromOneToHundred) {
         alert(`Wow, you guessed it! The number is ${numberFromOneToHundred}!`);
@@ -125,12 +125,12 @@ function questionSix() {
 
 questionSix();
 
-function questionOne() {
+function questionSeven() {
 // question 7 -- multiple choice question
-let answerMultipleChoice = prompt('And now for something completely different! What is one of my favorite colors? You are guessing from 4 different colors and you get 6 guesses!')
-console.log(answerMultipleChoice)
-let fourOfMyFavColors = ['blue', 'green', 'grey', 'brown']
-i = 0;
+let answerMultipleChoice = prompt('And now for something completely different! What is one of my favorite colors? You are guessing from 4 different colors and you get 6 guesses!');
+console.log(answerMultipleChoice);
+let fourOfMyFavColors = ['blue', 'green', 'grey', 'brown'];
+let i = 0;
 let guessCounter;
 
 for (guessCounter = 0; guessCounter < 5; guessCounter++) {
@@ -143,11 +143,15 @@ for (guessCounter = 0; guessCounter < 5; guessCounter++) {
   if (fourOfMyFavColors[i] === answerMultipleChoice) {
     break;
   }
+
   answerMultipleChoice = prompt('Sorry, that\'s not one of my favorite colors. Please guess again.');
   // console.log(answerMultipleChoice);
 }
 alert(`The correct answers are ${fourOfMyFavColors[0]}, ${fourOfMyFavColors[1]}, ${fourOfMyFavColors[2]}, and ${fourOfMyFavColors[3]}.`);
 // console.log(`The correct answers are ${fourOfMyFavColors[0]}, ${fourOfMyFavColors[1]}, ${fourOfMyFavColors[2]}, and ${fourOfMyFavColors[3]}.`);
+}
+
+questionSeven();
 
 alert(`Out of the 7 questions, you got ${userScore} correct!`);
 // console.log(`Out of the 7 questions, you got ${userScore} correct!`)''
