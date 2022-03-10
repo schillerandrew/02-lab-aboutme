@@ -8,18 +8,22 @@ let usersName = prompt('Hi, what\'s your name?');
 alert(`Welcome to my About Me project, ${usersName}!`);
 // console.log(`Welcome to my About Me project, ${usersName}!`);
 
-// question 1
-let answerOne = prompt('So how about a short quiz to get to know me better? (Yes/no or y/n answers please.) Did I grow up in Washington state?').toLowerCase();
-// console.log(answerOne);
+function questionOne() {
+  // question 1
+  let answerOne = prompt('So how about a short quiz to get to know me better? (Yes/no or y/n answers please.) Did I grow up in Washington state?').toLowerCase();
+  // console.log(answerOne);
 
-if (answerOne === 'n' || answerOne === 'no') {
-  alert('That\'s correct! I didn\'t grow up in Washington state -- I\'m from Ohio!');
-  //console.log('That\'s correct! I didn\'t grow up in Washington state -- I\'m from Ohio!');
-  userScore++;
-} else if (answerOne === 'y' || answerOne === 'yes') {
-  //console.log('Sorry, that\'s incorrect, I\'m actually from Ohio!');
-  alert('Sorry, that\'s incorrect, I\'m actually from Ohio!');
+  if (answerOne === 'n' || answerOne === 'no') {
+    alert('That\'s correct! I didn\'t grow up in Washington state -- I\'m from Ohio!');
+    //console.log('That\'s correct! I didn\'t grow up in Washington state -- I\'m from Ohio!');
+    userScore++;
+  } else if (answerOne === 'y' || answerOne === 'yes') {
+    //console.log('Sorry, that\'s incorrect, I\'m actually from Ohio!');
+    alert('Sorry, that\'s incorrect, I\'m actually from Ohio!');
+  }
 }
+
+questionOne();
 
 // question 2
 let answerTwo = prompt('Do I have a beard?').toLowerCase();
