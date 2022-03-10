@@ -5,8 +5,10 @@ let userScore = 0;
 // question "0" -- user's name
 let usersName = prompt('Hi, what\'s your name?');
 // console.log(usersName);
+
 alert(`Welcome to my About Me project, ${usersName}!`);
 // console.log(`Welcome to my About Me project, ${usersName}!`);
+ 
 
 function questionOne() {
   // question 1
@@ -25,18 +27,22 @@ function questionOne() {
 
 questionOne();
 
-// question 2
-let answerTwo = prompt('Do I have a beard?').toLowerCase();
-// console.log(answerTwo);
+function questionTwo() {
+  // question 2
+  let answerTwo = prompt('Do I have a beard?').toLowerCase();
+  // console.log(answerTwo);
 
-if (answerTwo === 'y' || answerTwo === 'yes') {
-  alert('That\'s correct!');
-  // console.log('That\'s correct!');
-  userScore++;
-} else if (answerTwo === 'n' || answerTwo === 'no') {
-    alert('Sorry, that\'s incorrect, I\'m definitely a beard guy.');
-    // console.log('Sorry, that\'s incorrect, I\'m definitely a beard guy.');
+  if (answerTwo === 'y' || answerTwo === 'yes') {
+    alert('That\'s correct!');
+    // console.log('That\'s correct!');
+    userScore++;
+  } else if (answerTwo === 'n' || answerTwo === 'no') {
+      alert('Sorry, that\'s incorrect, I\'m definitely a beard guy.');
+      // console.log('Sorry, that\'s incorrect, I\'m definitely a beard guy.');
+  }
 }
+
+questionTwo();
 
 // question 3
 let answerThree = prompt('Do I like computer games a whole dang lot?').toLowerCase();
