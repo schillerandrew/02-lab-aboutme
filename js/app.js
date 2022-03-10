@@ -44,18 +44,22 @@ function questionTwo() {
 
 questionTwo();
 
-// question 3
-let answerThree = prompt('Do I like computer games a whole dang lot?').toLowerCase();
-// console.log(answerThree);
+function questionThree() {
+  // question 3
+  let answerThree = prompt('Do I like computer games a whole dang lot?').toLowerCase();
+  // console.log(answerThree);
 
-if (answerThree === 'y' || answerThree === 'yes') {
-  alert('You bet I do -- computer games can be so much fun!');
-  // console.log('You bet I do -- computer games can be so much fun!');
-  userScore++;
-} else if (answerThree === 'n' || answerThree === 'no') {
-  alert('Nope, that\'s incorrect, I\'m a gamer!');
-  //console.log('Nope, that\'s incorrect, I\'m a gamer!');
+  if (answerThree === 'y' || answerThree === 'yes') {
+    alert('You bet I do -- computer games can be so much fun!');
+    // console.log('You bet I do -- computer games can be so much fun!');
+    userScore++;
+  } else if (answerThree === 'n' || answerThree === 'no') {
+    alert('Nope, that\'s incorrect, I\'m a gamer!');
+    //console.log('Nope, that\'s incorrect, I\'m a gamer!');
+  }
 }
+
+questionThree();
 
 // question 4
 let answerFour = prompt('Do I live with any cats?').toLowerCase();
