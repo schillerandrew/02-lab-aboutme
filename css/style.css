@@ -1,19 +1,82 @@
 body {
-  background-color: #CCC4B4;
+  background-color: #c0c0c0;
   text-align: center;
   color: black;
 }
 
-h2 {
-  color: #6149FC;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 20px;
-  border-width: medium;
-  border-style: dashed;
-  border-color: darkgoldenrod;
-  text-align: center;
+div { 
+  border-width: 10px;
+  border-style: solid;
+  background-color: aliceblue;
+  width: 400px;
+  padding: 50px;
+  position: fixed;
+}
+
+#about {
+  border-color: grey;
+  top: 245px;
+  left: 700px;
+  opacity: 0.75;
+  z-index: 1;
+  padding: 50px;
+  width: 350px;
+}
+
+#goals {
+  border-color: red;
+  top: 50px;
+  left: 300px;
+}
+
+#education {
+  border-color: #f3f303;
+  top: 50px;
+  right: 300px;
+}
+
+#experience {
+  border-color: cornflowerblue; 
+  top: 500px;
+  left: 300px;
+}
+
+#europe {
+  border-color: forestgreen;
+  top: 450px;
+  right: 300px;
 }
 
 p {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 20px;
+
+  text-align: left;
+  padding: 5px;
+}
+
+li {  
+  font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 600;
+  line-height: 20px;
+  text-align: left;
+  list-style: disc;
+}
+
+h2 {
+  font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+  font-size: 30px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 30px;
+
+  padding: 10px;
 }
